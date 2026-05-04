@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<style>
+@font-face {
+  font-family: 'Talina';
+  src: url('../fonts/Talina_DEMO.otf') format('opentype');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; background: #f4f7f6; padding: 20px; }
+.specimen-block { margin-bottom: 16px; }
+.label { font-size: 10px; font-weight: 700; color: #999; text-transform: uppercase; letter-spacing:.05em; margin-bottom: 6px; }
+.talina { font-family: 'Talina', sans-serif; color: #2c3e50; }
+.alphabet { font-family: 'Talina', sans-serif; color: #3498db; font-size: 1.5rem; letter-spacing: .04em; line-height: 1.5; word-break: break-all; }
+.nums { font-family: 'Talina', sans-serif; color: #2ecc71; font-size: 1.5rem; letter-spacing: .06em; }
+.divider { border: none; border-top: 1px solid #e8ecee; margin: 12px 0; }
+.note { font-size: 10px; color: #bbb; font-style: italic; margin-top: 6px; }
+</style></head>
+<body>
+  <div class="specimen-block">
+    <div class="label">Talina DEMO — Display font</div>
+    <div class="talina" style="font-size:3rem;">CRISTIAN</div>
+    <div class="talina" style="font-size:2rem; color:#3498db;">DevQA Portfolio</div>
+    <div class="talina" style="font-size:1.4rem; color:#2ecc71;">Quality Assurance &amp; Web Development</div>
+  </div>
+  <hr class="divider">
+  <div class="specimen-block">
+    <div class="label">Uppercase alphabet</div>
+    <div class="alphabet">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</div>
+  </div>
+  <div class="specimen-block">
+    <div class="label">Lowercase alphabet</div>
+    <div class="alphabet" style="color:#2c3e50;">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+  <div class="specimen-block">
+    <div class="label">Numerals &amp; punctuation</div>
+    <div class="nums">0 1 2 3 4 5 6 7 8 9 &nbsp; . , ! ? @ # &amp; ( )</div>
+  </div>
+  <p class="note">⚠ Talina DEMO — may have limited glyph coverage. Obtain full license for production use.</p>
+</body></html>
