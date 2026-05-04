@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; background: #f4f7f6; padding: 20px; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; align-items: center; }
+.label { font-size: 10px; font-weight: 700; color: #999; text-transform: uppercase; letter-spacing:.05em; margin-bottom: 6px; }
+
+.subject-tag {
+  font-size: 0.72rem; font-weight: 600; padding: 3px 10px; border-radius: 12px;
+  background: linear-gradient(90deg, rgba(52,152,219,0.2), rgba(26,188,156,0.2));
+  color: #3498db; border: 1px solid rgba(52,152,219,0.3);
+}
+.platform-tag {
+  font-size: 0.72rem; padding: 3px 10px; border-radius: 12px;
+  background: rgba(44,62,80,0.1); color: #333; border: 1px solid #ddd;
+}
+.tech {
+  font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 10px;
+  background: linear-gradient(90deg, rgba(155,89,182,0.2), rgba(52,152,219,0.2));
+  color: #333; border: 1px solid rgba(155,89,182,0.3);
+}
+.year-label {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: linear-gradient(90deg, #2c3e50, #3498db);
+  color: #fff; font-size: 0.85rem; font-weight: 700;
+  padding: 5px 14px; border-radius: 20px;
+}
+</style></head>
+<body>
+  <div class="label">Subject Tags</div>
+  <div class="row">
+    <span class="subject-tag">Comprog 1</span>
+    <span class="subject-tag">Comprog 2</span>
+    <span class="subject-tag">Data Structures &amp; Algorithms</span>
+    <span class="subject-tag">Free Elective</span>
+  </div>
+
+  <div class="label">Platform Tags</div>
+  <div class="row">
+    <span class="platform-tag"><i class="fa fa-desktop"></i> Desktop</span>
+    <span class="platform-tag"><i class="fa fa-mobile-alt"></i> Mobile</span>
+    <span class="platform-tag"><i class="fa fa-users"></i> Group</span>
+    <span class="platform-tag"><i class="fa fa-user"></i> Solo</span>
+  </div>
+
+  <div class="label">Tech Stack Chips</div>
+  <div class="row">
+    <span class="tech">Python</span>
+    <span class="tech">Tkinter</span>
+    <span class="tech">Kivy</span>
+    <span class="tech">C++</span>
+    <span class="tech">OOP</span>
+    <span class="tech">Java</span>
+    <span class="tech">CRUD</span>
+    <span class="tech">DSA</span>
+  </div>
+
+  <div class="label">Year Label (pill)</div>
+  <div class="row">
+    <span class="year-label"><i class="fa fa-calendar-alt"></i> 1st Year</span>
+    <span class="year-label"><i class="fa fa-calendar-alt"></i> 2nd Year</span>
+  </div>
+</body></html>

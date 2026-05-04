@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; background: #e8ecee; padding: 16px; display: flex; gap: 12px; flex-wrap: wrap; }
+.card {
+  background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(52,152,219,0.12) 100%);
+  border-radius: 12px; border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 16px; flex: 1; min-width: 200px;
+  display: flex; flex-direction: column; gap: 8px; cursor: pointer;
+}
+.card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.15); transform: translateY(-2px); transition: all .2s ease; }
+.project-meta { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.subject-tag {
+  font-size: 0.72rem; font-weight: 600; padding: 3px 10px; border-radius: 12px;
+  background: linear-gradient(90deg, rgba(52,152,219,0.2), rgba(26,188,156,0.2));
+  color: #3498db; border: 1px solid rgba(52,152,219,0.3);
+}
+.platform-tag {
+  font-size: 0.72rem; padding: 3px 10px; border-radius: 12px;
+  background: rgba(44,62,80,0.1); color: #333; border: 1px solid #ddd;
+}
+.card h3 { font-size: 1rem; color: #2c3e50; display: flex; align-items: center; gap: 6px; }
+.card h3 i { color: #3498db; }
+.card p { font-size: 0.82rem; color: #555; line-height: 1.5; }
+.tech-stack { display: flex; gap: 6px; flex-wrap: wrap; }
+.tech {
+  font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 10px;
+  background: linear-gradient(90deg, rgba(155,89,182,0.2), rgba(52,152,219,0.2));
+  color: #333; border: 1px solid rgba(155,89,182,0.3);
+}
+.card-thumb {
+  width: 100%; height: 100px; object-fit: cover;
+  border-radius: 8px; border: 1px solid #ddd;
+}
+</style></head>
+<body>
+  <div class="card">
+    <div class="project-meta">
+      <span class="subject-tag">Comprog 1</span>
+      <span class="platform-tag"><i class="fa fa-desktop"></i> Desktop</span>
+    </div>
+    <h3><i class="fa fa-calendar-check"></i> POLYCAL v1</h3>
+    <p>A student calendar desktop app for Polytechnic students — built with <strong>Python (Tkinter)</strong>.</p>
+    <div class="tech-stack">
+      <span class="tech">Python</span>
+      <span class="tech">Tkinter</span>
+    </div>
+    <img class="card-thumb" src="../assets/polycal-mockup.png" alt="POLYCAL">
+  </div>
+  <div class="card">
+    <div class="project-meta">
+      <span class="subject-tag">Comprog 3</span>
+      <span class="platform-tag"><i class="fa fa-users"></i> Group</span>
+    </div>
+    <h3><i class="fa fa-gamepad"></i> Tic-Tac-Toe</h3>
+    <p>A console-based two-player game applying object-oriented programming in <strong>C++</strong>.</p>
+    <div class="tech-stack">
+      <span class="tech">C++</span>
+      <span class="tech">OOP</span>
+    </div>
+    <img class="card-thumb" src="https://picsum.photos/seed/tictac77/400/180" alt="Tic-Tac-Toe">
+  </div>
+  <div class="card">
+    <div class="project-meta">
+      <span class="subject-tag">Free Elective</span>
+      <span class="platform-tag"><i class="fa fa-user"></i> Solo</span>
+    </div>
+    <h3><i class="fa fa-book"></i> Book Inventory CRUD</h3>
+    <p>A solo CRUD application for managing a book inventory — built with <strong>Java</strong>.</p>
+    <div class="tech-stack">
+      <span class="tech">Java</span>
+      <span class="tech">CRUD</span>
+    </div>
+    <img class="card-thumb" src="https://picsum.photos/seed/bookstore/400/180" alt="Book Inventory">
+  </div>
+</body></html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; background: #e8ecee; padding: 20px; }
+.row { display: flex; gap: 16px; flex-wrap: wrap; }
+.shadow-card { background: #fff; border-radius: 12px; padding: 16px 18px; flex: 1; min-width: 130px; display: flex; flex-direction: column; gap: 6px; }
+.shadow-name { font-size: 11px; font-weight: 700; color: #333; }
+.shadow-val  { font-size: 9px; font-family: monospace; color: #aaa; line-height: 1.4; }
+.s-sm   { box-shadow: 0 3px 8px rgba(0,0,0,0.1); }
+.s-card { box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.s-page { box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+.s-modal{ box-shadow: 0 20px 60px rgba(0,0,0,0.35); }
+</style></head>
+<body>
+<div class="row">
+  <div class="shadow-card s-sm"><div class="shadow-name">--shadow-sm</div><div class="shadow-val">0 3px 8px rgba(0,0,0,0.1)<br>Gallery items</div></div>
+  <div class="shadow-card s-card"><div class="shadow-name">--shadow-card</div><div class="shadow-val">0 4px 10px rgba(0,0,0,0.1)<br>Cards, preview items</div></div>
+  <div class="shadow-card s-page"><div class="shadow-name">--shadow-page</div><div class="shadow-val">0 8px 32px rgba(0,0,0,0.1)<br>Active page sections</div></div>
+  <div class="shadow-card s-modal"><div class="shadow-name">--shadow-modal</div><div class="shadow-val">0 20px 60px rgba(0,0,0,0.35)<br>Modal dialogs</div></div>
+</div>
+</body></html>
